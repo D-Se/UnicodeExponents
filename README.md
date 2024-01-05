@@ -1,19 +1,31 @@
 # UnicodeExponents
-[![Build Status](https://github.com/D-Se/UnicodeExponents.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/D-Se/UnicodeExponents.jl/actions/workflows/CI.yml?query=branch%3Amain)
 
-An experimental package that introduces x⁰, x¹ ..., x⁹ postfix exponent operators.
+An experiment to introduces x⁰, x¹ ..., x⁹ postfix exponent operators.
 
 # Usage
 ```julia
 # enter Pkg mode, install a custom version of the Julia parser.
 ] add "https://github.com/D-Se/JuliaSyntax.jl.git"#UnicodeExponent
-# install this module
-] add "https://github.com/D-Se/UnicodeExponents.jl.git"
 
-using JuliaSyntax #check if version 0.4.7 is loaded
+using JuliaSyntax
 JuliaSyntax.enable_in_core!()
-using UnicodeExponents
+include("UnicodeExponents.jl")
+using .UnicodeExponents
 
 5²
 #> 25
+```
+
+# Usage 2
+```julia
+# enter Pkg mode, install a custom version of the Julia parser.
+] add "https://github.com/D-Se/JuliaSyntax.jl.git"#UnicodeExponent
+; git clone git@github.com:D-Se/UnicodeExponents.git
+] activate UnicodeExponents.jl
+] instantiate
+
+using JuliaSyntax
+JuliaSyntax.enable_in_core!()
+include("UnicodeExponents.jl")
+using .UnicodeExponents
 ```
