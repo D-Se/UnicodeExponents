@@ -11,7 +11,6 @@ Alternatively, you can use SSH to setup.
 * UnicodeExponents: git@github.com:D-Se/UnicodeExponents.git
 * JuliaSyntax.jl: git@github.com:D-Se/JuliaSyntax.jl.git
 
-
 ## 1. Open a terminal, grab this repo
 ```shell
 git clone https://github.com/D-Se/UnicodeExponents.git
@@ -41,7 +40,7 @@ y²y
 #> 1000
 ```
 
-# Cleanup
-```julia
 
-```
+# Known issues
+- Base/special/trig.jl doesn't parse correctly
+- Slows down the parser
