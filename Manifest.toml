@@ -1,0 +1,12 @@
+# This file is machine-generated - editing it directly is not advised
+
+julia_version = "1.10.0"
+manifest_format = "2.0"
+project_hash = "79b9e2f0dc4fe14fc1d9dbcdfd9326d93d9185a3"
+
+[[deps.JuliaSyntax]]
+git-tree-sha1 = "67f9e03afe907b880d49fa37b725fcb53017bb33"
+repo-rev = "UnicodeExponent"
+repo-url = "https://github.com/D-Se/JuliaSyntax.jl.git"
+uuid = "70703baa-626e-46a2-a12c-08ffd08c73b4"
+version = "0.4.7"
